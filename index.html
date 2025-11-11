@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-a-Sketch</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-    <h1>Etch-a-Sketch</h1>
-    <button id="reset-btn">Change Grid Size</button>
-    <div id="container"></div>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Etch-a-Sketch</h1>
+      <p class="tagline">Flex those DOM skills and doodle away.</p>
+    </header>
 
-    <script src="script.js"></script>
-</body>
+    <main class="page-content">
+      <section class="controls">
+        <button id="resize-btn" type="button">Resize Grid</button>
+        <p class="size-readout">
+          Current grid: <span data-size-display>16 × 16</span>
+        </p>
+      </section>
+
+      <div class="canvas" role="img" aria-label="etch a sketch drawing surface"></div>
+    </main>
+
+    <footer class="page-footer">
+      <small>Built for The Odin Project &middot; Made with vanilla JS</small>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
 </html>
